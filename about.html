@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sobre a Travel X</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f7fb;
+      color:#222;
+      line-height:1.7;
+    }
+
+    /* HERO */
+
+    .hero{
+      height:80vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)),
+      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content{
+      max-width:800px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      margin-bottom:20px;
+      letter-spacing:4px;
+    }
+
+    .hero p{
+      font-size:22px;
+      color:#f1f1f1;
+    }
+
+    /* SECTION */
+
+    section{
+      padding:80px 10%;
+    }
+
+    .container{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .container img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .text h2{
+      font-size:42px;
+      color:#0d2b45;
+      margin-bottom:25px;
+    }
+
+    .text p{
+      margin-bottom:20px;
+      color:#555;
+      font-size:18px;
+    }
+
+    /* VALUES */
+
+    .values{
+      background:white;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+      margin-top:50px;
+    }
+
+    .card{
+      background:#f7f9fc;
+      padding:35px;
+      border-radius:20px;
+      text-align:center;
+      transition:0.3s;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin:20px 0;
+      color:#0d2b45;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#666;
+    }
+
+    .icon{
+      font-size:50px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#0d2b45;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      margin-top:50px;
+    }
+
+    footer h3{
+      font-size:32px;
+      margin-bottom:15px;
+    }
+
+    footer p{
+      color:#d8d8d8;
+    }
+
+    /* RESPONSIVO */
+
+    @media(max-width:900px){
+
+      .container{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .text h2{
+        font-size:34px;
+      }
+  <button><a href="Index.html"></a></button>
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+<nav>
+</nav>
+    <div class="hero-content">
+
+      <h1>TRAVEL X</h1>
+
+      <p>
+        Transformando viagens em experiências inesquecíveis desde 2010
+      </p>
+
+    </div>
+
+  </header>
+
+  <!-- HISTÓRIA -->
+
+  <section>
+
+    <div class="container">
+
+      <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
+      alt="Equipe Travel X">
+
+      <div class="text">
+
+        <h2>Nossa História</h2>
+
+        <p>
+          A Travel X nasceu do sonho de aproximar pessoas dos destinos
+          mais incríveis do mundo. Fundada em 2010 por apaixonados por
+          turismo e aventura, nossa agência começou pequena, oferecendo
+          viagens nacionais personalizadas para amigos e familiares.
+        </p>
+
+        <p>
+          Com o passar dos anos, a Travel X cresceu rapidamente graças
+          ao compromisso com qualidade, conforto e atendimento premium.
+          Hoje, somos referência em pacotes internacionais de luxo,
+          experiências exclusivas e viagens inesquecíveis.
+        </p>
+
+        <p>
+          Já ajudamos milhares de clientes a conhecerem lugares como
+          Paris, Dubai, Maldivas, Nova York, Santorini e muitos outros
+          destinos paradisíacos ao redor do planeta.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MISSÃO -->
+
+  <section class="values">
+
+    <div style="text-align:center;">
+
+      <h2 style="font-size:45px; color:#0d2b45;">
+        Nossos Valores
+      </h2>
+
+      <p style="margin-top:15px; color:#666;">
+        O que torna a Travel X especial
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="icon">✈</div>
+
+        <h3>Experiência</h3>
+
+        <p>
+          Criamos roteiros únicos e personalizados para cada viajante.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🌍</div>
+
+        <h3>Destinos Exclusivos</h3>
+
+        <p>
+          Trabalhamos com os melhores hotéis e resorts internacionais.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">💎</div>
+
+        <h3>Qualidade Premium</h3>
+
+        <p>
+          Garantimos conforto, segurança e excelência em cada detalhe.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">❤️</div>
+
+        <h3>Paixão por Viajar</h3>
+
+        <p>
+          Nosso objetivo é transformar sonhos em memórias inesquecíveis.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h3>Travel X</h3>
+
+    <p>
+      Descubra o mundo com quem entende de viagens.
+    </p>
+
+  </footer>
+
+</body>
+</html>

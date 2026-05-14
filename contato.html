@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contato - Travel X</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#222;
+    }
+
+    /* HERO */
+
+    .hero{
+      height:50vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      color:white;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:65px;
+      letter-spacing:3px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:20px;
+      color:#f1f1f1;
+    }
+
+    /* CONTAINER */
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:80px 8%;
+
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+    }
+
+    /* INFO */
+
+    .info h2{
+      font-size:40px;
+      color:#0d2b45;
+      margin-bottom:25px;
+    }
+
+    .info p{
+      color:#666;
+      margin-bottom:30px;
+      line-height:1.8;
+      font-size:18px;
+    }
+
+    .contact-box{
+      background:white;
+      padding:25px;
+      border-radius:18px;
+      margin-bottom:20px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .contact-box h3{
+      color:#ff7a00;
+      margin-bottom:10px;
+    }
+
+    /* FORM */
+
+    .form-area{
+      background:white;
+      padding:40px;
+      border-radius:25px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .form-area h2{
+      font-size:36px;
+      margin-bottom:25px;
+      color:#0d2b45;
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    input,
+    textarea{
+      padding:16px;
+      border:1px solid #ccc;
+      border-radius:12px;
+      font-size:16px;
+      outline:none;
+      transition:0.3s;
+    }
+
+    input:focus,
+    textarea:focus{
+      border-color:#ff7a00;
+      box-shadow:0 0 10px rgba(255,122,0,0.2);
+    }
+
+    textarea{
+      resize:none;
+      height:150px;
+    }
+
+    button{
+      padding:16px;
+      border:none;
+      border-radius:12px;
+      background:#ff7a00;
+      color:white;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    button:hover{
+      background:#e56700;
+      transform:translateY(-3px);
+    }
+
+    /* MAP */
+
+    .map{
+      margin-top:30px;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    iframe{
+      width:100%;
+      height:300px;
+      border:0;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#0d2b45;
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+      margin-top:40px;
+    }
+
+    footer h3{
+      font-size:30px;
+      margin-bottom:10px;
+    }
+
+    footer p{
+      color:#ddd;
+    }
+
+    /* RESPONSIVO */
+
+    @media(max-width:900px){
+
+      .container{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div>
+
+      <h1>CONTATO</h1>
+
+      <p>
+        Entre em contato com a Travel X e planeje sua próxima viagem
+      </p>
+
+    </div>
+
+  </header>
+
+  <!-- CONTAINER -->
+
+  <section class="container">
+
+    <!-- INFO -->
+
+    <div class="info">
+
+      <h2>Fale Conosco</h2>
+
+      <p>
+        Nossa equipe está pronta para ajudar você a encontrar
+        os melhores destinos, hotéis e experiências ao redor do mundo.
+      </p>
+
+      <div class="contact-box">
+
+        <h3>📍 Endereço</h3>
+
+        <p>
+          Avenida Paulista, 1500<br>
+          São Paulo - SP
+        </p>
+
+      </div>
+
+      <div class="contact-box">
+
+        <h3>📞 Telefone</h3>
+
+        <p>
+          +55 (11) 99999-9999
+        </p>
+
+      </div>
+
+      <div class="contact-box">
+
+        <h3>✉ E-mail</h3>
+
+        <p>
+          contato@travelx.com
+        </p>
+
+      </div>
+
+      
+
+    </div>
+
+    <!-- FORM -->
+
+    <div class="form-area">
+
+      <h2>Envie uma Mensagem</h2>
+
+      <form>
+
+        <input
+          type="text"
+          placeholder="Seu nome"
+          required>
+
+        <input
+          type="email"
+          placeholder="Seu e-mail"
+          required>
+
+        <input
+          type="text"
+          placeholder="Destino desejado">
+
+        <textarea
+          placeholder="Digite sua mensagem..."></textarea>
+
+        <button type="submit">
+          Enviar Mensagem
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h3>Travel X</h3>
+
+    <p>
+      Sua próxima aventura começa aqui ✈
+    </p>
+
+  </footer>
+
+</body>
+</html>

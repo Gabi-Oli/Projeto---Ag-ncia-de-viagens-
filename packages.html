@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel X - Agência de Viagens</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#222;
+    }
+
+    header{
+      height:90vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      margin-bottom:20px;
+      letter-spacing:3px;
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-bottom:30px;
+      line-height:1.6;
+    }
+
+    .hero button{
+      padding:15px 35px;
+      border:none;
+      background:#ff7a00;
+      color:white;
+      font-size:18px;
+      border-radius:40px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .hero button:hover{
+      background:#e66800;
+      transform:scale(1.05);
+    }
+
+    section{
+      padding:70px 8%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .title h2{
+      font-size:40px;
+      color:#0d2b45;
+      margin-bottom:10px;
+    }
+
+    .packages{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card-content h3{
+      font-size:28px;
+      margin-bottom:10px;
+      color:#0d2b45;
+    }
+
+    .location{
+      color:#ff7a00;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    .details{
+      margin-bottom:20px;
+      color:#555;
+      line-height:1.7;
+    }
+
+    .hotel{
+      background:#eef3f8;
+      padding:12px;
+      border-radius:10px;
+      margin-bottom:15px;
+    }
+
+    .price{
+      font-size:32px;
+      color:#0d2b45;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      width:100%;
+      text-align:center;
+      background:#ff7a00;
+      color:white;
+      padding:14px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#e66800;
+    }
+
+    footer{
+      background:#0d2b45;
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+      margin-top:50px;
+    }
+
+    footer h3{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>TRAVEL X</h1>
+
+      <p>
+        Descubra os melhores destinos do mundo com conforto,
+        luxo e experiências inesquecíveis.
+      </p>
+
+      <button>Explorar Pacotes</button>
+    </div>
+  </header>
+
+  <section>
+
+    <div class="title">
+      <h2>Pacotes Internacionais</h2>
+      <p>Escolha sua próxima aventura</p>
+    </div>
+
+    <div class="packages">
+
+      <!-- PARIS -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop" alt="Paris Hotel">
+
+        <div class="card-content">
+
+          <h3>Paris</h3>
+
+          <div class="location">França</div>
+
+          <div class="hotel">
+            🏨 Hotel: Paris Luxury Palace ★★★★★
+          </div>
+
+          <div class="details">
+            ✔ 7 noites<br>
+            ✔ Café da manhã incluso<br>
+            ✔ Tour pela Torre Eiffel<br>
+            ✔ Passeio no Rio Sena<br>
+            ✔ Transfer aeroporto/hotel
+          </div>
+
+          <div class="price">
+            R$ 12.900
+          </div>
+
+          <a href="#" class="btn">Reservar Agora</a>
+
+        </div>
+      </div>
+
+      <!-- MALDIVAS -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1200&auto=format&fit=crop" alt="Maldivas Resort">
+
+        <div class="card-content">
+
+          <h3>Maldivas</h3>
+
+          <div class="location">Oceano Índico</div>
+
+          <div class="hotel">
+            🏨 Hotel: Maldives Water Resort ★★★★★
+          </div>
+
+          <div class="details">
+            ✔ 5 noites em bangalô<br>
+            ✔ All inclusive<br>
+            ✔ Passeio de barco<br>
+            ✔ Spa premium<br>
+            ✔ Vista para o mar
+          </div>
+
+          <div class="price">
+            R$ 19.500
+          </div>
+
+          <a href="#" class="btn">Reservar Agora</a>
+
+        </div>
+      </div>
+
+      <!-- DUBAI -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop" alt="Dubai Hotel">
+
+        <div class="card-content">
+
+          <h3>Dubai</h3>
+
+          <div class="location">Emirados Árabes</div>
+
+          <div class="hotel">
+            🏨 Hotel: Royal Dubai Resort ★★★★★
+          </div>
+
+          <div class="details">
+            ✔ 6 noites<br>
+            ✔ Safari no deserto<br>
+            ✔ City tour premium<br>
+            ✔ Café da manhã incluso<br>
+            ✔ Piscina panorâmica
+          </div>
+
+          <div class="price">
+            R$ 15.800
+          </div>
+
+          <a href="#" class="btn">Reservar Agora</a>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <h3>Travel X</h3>
+
+    <p>
+      Sua próxima viagem começa aqui ✈
+    </p>
+
+  </footer>
+
+</body>
+</html>
