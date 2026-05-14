@@ -1,6 +1,10 @@
 ✈️ Travel X - Agência de Viagens
 Projeto de website responsivo desenvolvido com HTML5 e CSS3 para uma agência de viagens fictícia chamada Travel X.
 
+![Preview](Preview.png)
+
+https://gabi-oli.github.io/Projeto---Ag-ncia-de-viagens-/
+
 O site possui páginas modernas com visual profissional, foco em experiência do usuário e adaptação para diferentes dispositivos.
 
 📸 Preview do Projeto
