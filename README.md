@@ -1,6 +1,8 @@
 ✈️ Travel X - Agência de Viagens
 Projeto de website responsivo desenvolvido com HTML5 e CSS3 para uma agência de viagens fictícia chamada Travel X.
+
 O site possui páginas modernas com visual profissional, foco em experiência do usuário e adaptação para diferentes dispositivos.
+
 📸 Preview do Projeto
 O projeto inclui:
 Página inicial moderna
@@ -10,6 +12,7 @@ Tela de login
 Layout responsivo para celulares e tablets
 Design com efeito glassmorphism
 Hero sections com imagens de viagem
+
 🚀 Tecnologias Utilizadas
 HTML5
 CSS3
